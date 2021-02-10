@@ -96,7 +96,6 @@ class ElmyraService : Service(), SharedPreferences.OnSharedPreferenceChangeListe
     private fun createAction(key: String): Action {
         return when (key) {
             "screenshot" -> ScreenshotAction(this)
-            "assistant" -> AssistantAction(this)
             "camera" -> CameraAction(this)
             "power_menu" -> PowerMenuAction(this)
             "mute" -> MuteAction(this)
